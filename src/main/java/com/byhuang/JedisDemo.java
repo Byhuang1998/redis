@@ -14,5 +14,7 @@ public class JedisDemo {
         Jedis jedis = new Jedis("192.168.119.130", 6379);
         String ping = jedis.ping();
         System.out.println(ping);
+        // 要关闭jedis
+        jedis.close();
     }
 }
